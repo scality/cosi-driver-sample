@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.2.1
 
-FROM --platform=${BUILDPLATFORM} docker.io/golang:1.16.4-buster AS base
+FROM --platform=${BUILDPLATFORM} docker.io/golang:1.17beta1-buster AS base
 ARG BUILDPLATFORM
 WORKDIR /usr/src/cosi-driver-sample
 COPY go.mod go.sum ./
