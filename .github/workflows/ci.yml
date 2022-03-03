@@ -115,7 +115,7 @@ jobs:
       contents: read
     steps:
       - name: Retrieve artifacts
-        uses: actions/download-artifact@v2.0.9
+        uses: actions/download-artifact@v3
         with:
           name: container-images
       - name: Start Kind cluster
