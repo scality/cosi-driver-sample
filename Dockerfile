@@ -36,7 +36,7 @@ RUN --mount=target=. \
 ENTRYPOINT ["go", "test", "-mod=readonly", "-v", "./..."]
 
 # gcr.io/distroless/static:nonroot
-FROM --platform=${TARGETPLATFORM} gcr.io/distroless/static@sha256:cd784033c94dd30546456f35de8e128390ae15c48cbee5eb7e3306857ec17631 as bin
+FROM --platform=${TARGETPLATFORM} gcr.io/distroless/static@sha256:7198a357ff3a8ef750b041324873960cf2153c11cc50abb9d8d5f8bb089f6b4e as bin
 ARG TARGETPLATFORM
 
 LABEL org.opencontainers.image.authors="Nicolas Trangez <nicolas.trangez@scality.com>" \
